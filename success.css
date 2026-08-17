@@ -1,0 +1,136 @@
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f4f7;
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+.container {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    padding: 20px;
+
+}
+
+
+.success-box {
+
+    background-color: white;
+
+    padding: 40px;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        0 5px 20px
+        rgba(0, 0, 0, 0.1);
+
+}
+
+
+.check {
+
+    width: 70px;
+
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background-color: #16a34a;
+
+    color: white;
+
+    font-size: 45px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+}
+
+
+h1 {
+
+    color: #15803d;
+
+    margin-bottom: 15px;
+
+}
+
+
+p {
+
+    color: #666;
+
+    margin-bottom: 15px;
+
+}
+
+
+#candidateName {
+
+    color: #333;
+
+    font-weight: bold;
+
+}
+
+
+button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 15px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #2563eb;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+}
+
+
+button:hover {
+
+    background-color: #1d4ed8;
+
+}

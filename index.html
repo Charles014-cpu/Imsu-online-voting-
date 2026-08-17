@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Online Voting</title>
+<link rel="stylesheet" href="index.css">
+<style>
+body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f7f6; color: #333; }
+        .container { max-width: 500px; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        h2 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+        input[type="text"], input[type="file"] { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #0056b3; color: white; border: none; padding: 12px 20px; border-radius: 4px; cursor: pointer; width: 100%; font-size: 16px; }
+        button:hover { background: #004085; }
+        .result { margin-top: 15px; padding: 10px; border-radius: 4px; display: none; }
+        .success { background: #d4edda; color: #155724; }
+        .error { background: #f8d7da; color: #721c24; }
+        .hidden { display: none; }
+    </style>
+</style>
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="login-box">
+
+            <h1>Student Online Voting</h1>
+
+            <p>Faculty President Election</p>
+        
+      <form onsubmit="login(event)">
+                <input
+                    type="text"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+              
+<input
+                    type="text"
+                    id="matric"
+                    placeholder="Enter your matric number"
+                    required
+                >
+                <button type="submit">Continue</button>
+            </form>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function login(event) {
+
+            event.preventDefault();
+
+            let email =
+                document.getElementById("email").value;
+
+            let matric =
+                document.getElementById("matric").value;
+
+
+            localStorage.setItem("email", email);
+
+            localStorage.setItem("matric", matric);
+
+
+            window.location.href = "voting.html";
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

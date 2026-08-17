@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body style="display: flex; justify-content: center; align-items: center; min-height: 100vh; margin: 0;">
+<div class="card">
+    </div>
+</body>
+<style>
+body { font-family: Arial, sans-serif; margin: 30px; background-color: #f4f7f6; color: #333; }
+        .container { max-width: 500px; background: white; padding: 25px; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 30px; }
+h1 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+        h2 { color: #0056b3; border-bottom: 2px solid #eee; padding-bottom: 8px; }
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<fieldset>
+    <title>Faculty President Election</title>
+    <link rel="stylesheet" href="voting.css">
+<fieldset>
+<marquee>Cast your vote securely using your Student ID :</marquee>
+</fieldset>
+</head>
+
+
+<body>
+
+
+    <div class="container">
+
+        <div class="voting-box">
+
+            <h1>Faculty President Election</h1>
+
+            <p>
+                Select one candidate to vote for
+            </p>
+
+
+            <!-- CANDIDATE 1 -->
+
+            <div class="candidate">
+
+                <div>
+
+                    <h2>John Okafor</h2>
+
+                    <span>
+                        Department: Computer Science
+                    </span>
+
+                </div>
+
+
+                <button onclick="vote('John Okafor')">
+
+                    Vote
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CANDIDATE 2 -->
+
+            <div class="candidate">
+
+                <div>
+
+                    <h2>Mary Eze</h2>
+
+                    <span>
+                        Department: Information Technology
+                    </span>
+
+                </div>
+
+
+                <button onclick="vote('Mary Eze')">
+
+                    Vote
+
+                </button>
+
+            </div>
+
+
+
+            <!-- CANDIDATE 3 -->
+
+            <div class="candidate">
+
+                <div>
+
+                    <h2>David Obi</h2>
+
+                    <span>
+                        Department: Software Engineering
+                    </span>
+
+                </div>
+
+
+                <button onclick="vote('David Obi')">
+
+                    Vote
+
+                </button>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <script>
+
+        function vote(candidate) {
+
+
+            let confirmVote = confirm(
+
+                "Are you sure you want to vote for "
+                + candidate
+                + "?"
+
+            );
+
+
+            if (confirmVote) {
+
+
+                localStorage.setItem(
+
+                    "candidate",
+
+                    candidate
+
+                );
+
+
+                window.location.href = "success.html";
+
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
